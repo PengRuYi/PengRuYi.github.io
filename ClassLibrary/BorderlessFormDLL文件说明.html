@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BorderlessForm DLL文件说明</title>
+</head>
+
+<!--CSS样式设置-->
+<style>
+    /*网页页面样式设置*/
+    body {
+        background-color: rgba(255, 255, 255, 0.562);
+    }
+
+    h1 {
+        color: black;
+        text-align: center;
+        font-size: 30px;
+        font-style: normal
+    }
+
+    h2 {
+        color: rgb(0, 0, 0);
+        text-align: left;
+        font-size: 20px;
+    }
+
+    h3 {
+        color: rgb(0, 0, 0);
+        text-align: left;
+        font-size: 16px;
+    }
+
+    p {
+        font-style: unset;
+    }
+
+    pre {
+        font-size: 20px;
+    }
+
+    #column1 {
+        width: 150px;
+    }
+
+    #column2 {
+        width: 150px;
+    }
+
+    #column3 {
+        width: 100px;
+    }
+
+    #column4 {
+        width: 200px;
+    }
+
+    #column5 {
+        width: 500px;
+    }
+
+    #Row {
+        height: 50px;
+        text-align: center;
+    }
+
+    #HeadColumn {
+        height: 50px;
+        text-align: center;
+    }
+
+</style>
+
+<body>
+    <h1>BorderlessForm DLL文件说明</h1>
+    <h2>一、使用前准备</h2>
+    <p>1、在项目中引用该动态链接库</p>
+    <p>2、引用命名空间（C#: using BorderlessForm;）</p>
+    <h2>二、属性介绍</h2>
+    <!--属性表格-->
+    <table border="1" cellspacing="0">
+        <!--表格式属性介绍-->
+        <!--标题栏-->
+        <tr>
+            <th id="HeadColumn">属性</th>
+            <th id="HeadColumn">类型</th>
+            <th id="HeadColumn">可访问性</th>
+            <th id="HeadColumn">默认值</th>
+            <th id="HeadColumn">注释</th>
+        </tr>
+
+        <!--第一行-->
+        <tr id="Row">
+            <td id="column1">ThisForm</td>
+            <td id="column2">Form</td>
+            <td id="column3">Get/Set</td>
+            <td id="column4">this</td>
+            <td id="column5">设置要操作的窗口</td>
+        </tr>
+
+        <!--第二行-->
+        <tr id="Row">
+            <td id="column1">BackColor</td>
+            <td id="column2">Color</td>
+            <td id="column3">Get/Set</td>
+            <td id="column4">Color.FromArgb(17, 17, 17)</td>
+            <td id="column5">获取或设置窗口标题栏背景色</td>
+        </tr>
+
+        <!--第三行-->
+        <tr id="Row">
+            <td id="column1">FrameBackColor</td>
+            <td id="column2">Color</td>
+            <td id="column3">Get/Set</td>
+            <td id="column4">Color.Blue</td>
+            <td id="column5">获取或设置窗体边框背景色</td>
+        </tr>
+
+        <!--第四行-->
+        <tr id="Row">
+            <td id="column1">TitleBarHeight</td>
+            <td id="column2">int</td>
+            <td id="column3">Get/Set</td>
+            <td id="column4">35</td>
+            <td id="column5">获取或设置窗口标题栏的高度</td>
+        </tr>
+
+        <!--第五行-->
+        <tr id="Row">
+            <td id="column1">TitleBarText</td>
+            <td id="column2">string</td>
+            <td id="column3">Get/Set</td>
+            <td id="column4">null</td>
+            <td id="column5">获取或设置窗口标题栏文本</td>
+        </tr>
+
+        <!--第六行-->
+        <tr id="Row">
+            <td id="column1">TitleBarTextStyle</td>
+            <td id="column2">Font</td>
+            <td id="column3">Get/Set</td>
+            <td id="column4">Font("仿宋", 11, FontStyle.Italic)</td>
+            <td id="column5">获取或设置窗口标题栏文本的字体样式</td>
+        </tr>
+
+        <!--第七行-->
+        <tr id="Row">
+            <td id="column1">TitleBarTextColor</td>
+            <td id="column2">Color</td>
+            <td id="column3">Get/Set</td>
+            <td id="column4">Color.White</td>
+            <td id="column5">获取或设置窗口标题栏文本的字体颜色</td>
+        </tr>
+
+        <!--第八行-->
+        <tr id="Row">
+            <td id="column1">MouseOverBackColor</td>
+            <td id="column2">Color</td>
+            <td id="column3">Get/Set</td>
+            <td id="column4">Color.FromArgb(50, 50, 50)</td>
+            <td id="column5">获取或设置鼠标移过 最小化、最大化、关闭按钮的可视区的颜色</td>
+        </tr>
+
+        <!--第九行-->
+        <tr id="Row">
+            <td id="column1">BorderWidth</td>
+            <td id="column2">byte</td>
+            <td id="column3">Get/Set</td>
+            <td id="column4">2</td>
+            <td id="column5">获取或设置窗体边框的宽度</td>
+        </tr>
+
+        <!--第十行-->
+        <tr id="Row">
+            <td id="column1">IsDisplayMin</td>
+            <td id="column2">bool</td>
+            <td id="column3">Get/Set</td>
+            <td id="column4">true</td>
+            <td id="column5">是否显示最小化按钮</td>
+        </tr>
+
+        <!--第十一行-->
+        <tr id="Row">
+            <td id="column1">IsDisplayMax</td>
+            <td id="column2">bool</td>
+            <td id="column3">Get/Set</td>
+            <td id="column4">true</td>
+            <td id="column5">是否显示最大化按钮</td>
+        </tr>
+
+        <!--第十二行-->
+        <tr id="Row">
+            <td id="column1">FormCloseEvent</td>
+            <td id="column2">FormCloseEvent</td>
+            <td id="column3">Set</td>
+            <td id="column4">FormCloseEvent.ApplicationClose</td>
+            <td id="column5">设置关闭按钮单击事件 </br> (ApplicationClose:关闭应用程序，FormClose:关闭当前窗口)</td>
+        </tr>
+
+        <!--第十三行-->
+        <tr id="Row">
+            <td id="column1">IsZoom</td>
+            <td id="column2">bool</td>
+            <td id="column3">Set</td>
+            <td id="column4">true</td>
+            <td id="column5">设置窗体是否可以缩放</td>
+        </tr>
+
+
+    </table>
+
+    <h2>三、方法介绍</h2>
+    <p>Initialization():程序初始化</p>
+    <p>FormMoveEvent():鼠标移动事件执行的方法，可以给指定的控件添加一个鼠标移动的事件来控制窗口移动</p>
+
+    <h2>四、案例</h2>
+    <pre>
+        案例1:
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            BorderlessFromStyle borderlessFromStyle = new BorderlessFromStyle
+            {
+            ThisForm = this
+            };
+            borderlessFromStyle.Initialization();
+            //给 button1 添加鼠标移动事件，该事件用来控制窗口的移动
+            button1.MouseMove += new MouseEventHandler(borderlessFormStyle.FormMoveEvent);
+        }
+    </pre>
+
+    
+    <pre>
+        案例2:
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            BorderlessFromStyle borderlessFromStyle = new BorderlessFromStyle
+            {
+                ThisForm = this,
+                BackColor = Color.FromArgb(17, 17, 17),
+                FrameBackColor = Color.Blue,
+                TitleBarHeight = 35,
+                TitleBarText = "窗口名称",
+                TitleBarTextStyle = new Font("仿宋", 11, FontStyle.Italic),
+                TitleBarTextColor = Color.White,
+                MouseOverBackColor = Color.FromArgb(50, 50, 50),
+                BorderWidth = 2,
+                IsDisplayMin = true,
+                IsDisplayMax = true,
+                FormCloseEvent =FormCloseEvent.ApplicationClose,
+                IsZoom = true
+            };
+            borderlessFromStyle.Initialization();
+            //给 button1 添加鼠标移动事件，该事件用来控制窗口的移动
+            button1.MouseMove += new MouseEventHandler(borderlessFormStyle.FormMoveEvent);
+        }
+    </pre>
+    <p>以上案例1和案例2的效果是相同的，案例2中设置的属性参数都是默认值，如果需要使用默认值可以写也可以不写。</p>
+</body>
+
+</html>
