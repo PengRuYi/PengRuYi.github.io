@@ -3,7 +3,7 @@
   <URLAddress URL="https://www.pry.ac.cn/UpdateFile/TestAPP/UpdateXmlFile.Xml" />
   <UpdateInfo>
     <UpdateTime Date="2020/8/7 18:26:26" />
-    <Version Ver="1.0.0.1" />
+    <Version Ver="1.0.0.2" />
   </UpdateInfo>
   <UpdateFileList>
     <UpdateFile ContentLength="8.50KB" FileName="项目自动升级测试.exe" />
