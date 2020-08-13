@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AutoUpdater>
+  <URLAddress URL="https://www.pry.ac.cn/UpdateFile/CommunicationTest/UpdateXmlFile.Xml" />
+  <UpdateInfo>
+    <UpdateTime Date="2020/8/13 13:38:53" />
+    <Version Ver="1.0.0.0" />
+  </UpdateInfo>
+  <UpdateFileList />
+</AutoUpdater>
