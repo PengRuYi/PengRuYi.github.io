@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axplayer</title>
+
+<style>
+
+/*下载按钮样式*/
+#But_Dowon {
+    text-decoration:none;           
+    width: 200px;  
+    padding:8px;       
+    background-image:linear-gradient(to right,rgb(66, 173, 235),rgb(67, 69, 212));
+    border-color: #357ebd;  
+    color: #fff;  
+    -moz-border-radius: 100px;  
+    -webkit-border-radius: 100px;  
+    border-radius: 100px; /* future proofing */  
+    -khtml-border-radius: 100px; /* for old Konqueror browsers */  
+    text-align: center;  
+    vertical-align: middle;  
+    border:none;  
+    font-weight: 900;  
+    font-size:125%  
+    display：inline-block;           
+    cursor:pointer;
+    -webkit-transition-duration:0.4s;
+    transition-duration:0.4;   
+
+      /*鼠标进入按钮实现高亮效果*/
+    opacity:0.6; 
+    transition: opacity 1s;   
+}
+
+/*鼠标进入按钮事件*/
+#But_Dowon:hover {
+    color: white;	/*主要代码*/
+    opacity: 1;		/*主要代码*/
+    /* transition-property: opacity;
+    transition-duration: 1.5s; */
+}
+
+</style>
+
+</head>
+
+<style>
+
+    /*页面背景设置*/
+    body{
+        background-image:url("images/背景图.jpg");
+        background-size:100% 100%;
+        background-attachment: fixed;
+    }
+
+    /*超链接设置*/
+   a{
+    text-decoration: none;/*取消超链接下划线*/   
+    font-family:楷体;
+    font-size:24pt;     
+    text-align:left;
+    color:white;
+    }
+
+</style>
+
+<body>
+
+    <div style="padding-left:200px;padding-top:500px">
+        <button href="#" id="But_Dowon">
+            <a href="https://www.pry.ac.cn/Software/Axplayer.zip">立即下载</a>
+        </button>
+    </div>
+
+</body>
+</html>
