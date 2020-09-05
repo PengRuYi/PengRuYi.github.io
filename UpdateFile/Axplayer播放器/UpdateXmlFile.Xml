@@ -2,8 +2,10 @@
 <AutoUpdater>
   <URLAddress URL="https://www.pry.ac.cn/UpdateFile/Axplayer播放器/UpdateXmlFile.Xml" />
   <UpdateInfo>
-    <UpdateTime Date="2020/8/12 15:17:20" />
-    <Version Ver="1.0.0.0" />
+    <UpdateTime Date="2020/9/5 15:01:26" />
+    <Version Ver="1.0.0.1" />
   </UpdateInfo>
-  <UpdateFileList />
+  <UpdateFileList>
+    <UpdateFile ContentLength="603.50KB" FileName="Axplayer.exe" />
+  </UpdateFileList>
 </AutoUpdater>
